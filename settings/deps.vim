@@ -20,8 +20,6 @@
 
 " Unite.vim {{{
 
-call unite#custom#source('file,file/new,buffer,file_rec', 'matchers', 'matcher_fuzzy')
-call unite#custom#profile('files', 'filters', 'sorter_rank')
 let g:unite_prompt                        = '» '
 let g:unite_split_rule                    = 'botright'
 if executable('ag')
@@ -46,12 +44,12 @@ map <C-e> :VimFilerExplorer<CR>
 let g:vimfiler_as_default_explorer     = 1
 let g:loaded_netrwPlugin               = 1
 let g:vimfiler_define_wrapper_commands = 1
-let g:vimfiler_tree_leaf_icon          = "→"
+let g:vimfiler_tree_leaf_icon          = '→'
 let g:vimfiler_readonly_file_icon      = ''
-let g:vimfiler_marked_file_icon        = "✓"
-let g:vimfiler_tree_opened_icon        = "▾"
-let g:vimfiler_tree_closed_icon        = "▸"
-let g:vimfiler_file_icon               = "✎"
+let g:vimfiler_marked_file_icon        = '✓'
+let g:vimfiler_tree_opened_icon        = '▾'
+let g:vimfiler_tree_closed_icon        = '▸'
+let g:vimfiler_file_icon               = '✎'
 let g:vimfiler_max_directories_history = 100
 let g:vimfiler_ignore_pattern          = "^\%(\.git\)$"
 

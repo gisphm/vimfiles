@@ -29,11 +29,14 @@ if has('gui_running')
     set guioptions-=L
     set guioptions-=m
 
+    " fix menu error
+    "source $VIMRUNTIME/delmenu.vim
+	"source $VIMRUNTIME/menu.vim
+
     " 50 lines of text
     set lines=50
 
-    " Ubuntu Mono patched font
-    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
+    set guifont=DejaVu_Sans_Mono_for_powerline:h10
 
     " gui using solarized colorscheme
     colo solarized

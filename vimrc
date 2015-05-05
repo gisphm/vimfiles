@@ -33,7 +33,7 @@ for eachbundle in split(globpath(vimbundles, '*.vim'), '\n')
     exe 'source' eachbundle
 endfor
 
-call neobundle#end()
+call vundle#end()
 
 filetype plugin indent on
 
