@@ -20,7 +20,7 @@
 
 " General {{{
 
-if has('gui_running')
+if has('gui_running') && has('libcall')
     " Disable toolbar and scrollbars
     set guioptions-=T
     set guioptions-=r
@@ -40,6 +40,15 @@ if has('gui_running')
 
     " gui using solarized colorscheme
     colo solarized
+
+    if filereadable(expand('$VIM/gvimfullscreen.dll'))
+        let g:MyFullScreen = $VIM.'/gvimfullscreen.dll'
+        function! ToggleFullScreen() abort
+            call libcallnr(g:MyFullScreen, "ToggleFullScreen", 0)
+        endfunction
+
+        map <F11> <Esc>:call ToggleFullScreen()<CR>
+    endif
 endif
 
 " }}}

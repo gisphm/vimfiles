@@ -28,8 +28,8 @@ Plugin 'Shougo/unite-outline'
 Plugin 'Shougo/context_filetype.vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
-if executable('ag')
-    Plugin 'rking/ag.vim'
+if executable('ack')
+    Plugin 'mileszs/ack.vim'
 endif
 
 " }}}
