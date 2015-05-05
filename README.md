@@ -13,7 +13,8 @@ fork自[myvimrc][2]，我自己根据[spf13-vim][1]“改进”的在linux上用
 + __tmp__ 包含vim的`swap` `undo` `view` `backup` `session`文件夹
 
 ## TODO
-1. 解决目前配置可用的问题
+1. ✓ 解决目前配置可用的问题
+2. 替换`ag.vim`为`ack.vim`
 2. 解决可能遇到的问题（长期）
 
 ## 几点说明
