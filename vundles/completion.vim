@@ -20,14 +20,9 @@
 
 " Snippets & AutoComplete {{{
 
-NeoBundle 'Shougo/neosnippet-snippets'
-NeoBundle 'honza/vim-snippets'
-NeoBundle 'Shougo/neocomplete.vim'
-NeoBundle 'Shougo/neosnippet.vim', {
-            \ 'filetypes' : 'snippet',
-            \ 'unite_sources' : [
-            \     'neosnippet', 'neosnippet/user', 'neosnippet/runtime'
-            \ ],
-            \ }
+Plugin 'Shougo/neosnippet-snippets'
+Plugin 'honza/vim-snippets'
+Plugin 'Shougo/neocomplete.vim'
+Plugin 'Shougo/neosnippet.vim'
 
 " }}}

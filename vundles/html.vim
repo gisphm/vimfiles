@@ -20,9 +20,9 @@
 
 " HTML {{{
 
-NeoBundle 'othree/html5.vim'
-NeoBundle 'amirh/HTML-AutoCloseTag'
-NeoBundle 'tpope/vim-haml'
-NeoBundle 'mattn/emmet-vim'
+Plugin 'othree/html5.vim'
+Plugin 'amirh/HTML-AutoCloseTag'
+Plugin 'tpope/vim-haml'
+Plugin 'mattn/emmet-vim'
 
 " }}}

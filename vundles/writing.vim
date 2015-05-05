@@ -20,12 +20,12 @@
 
 " Writing {{{
 
-NeoBundle 'reedes/vim-litecorrect'
-NeoBundle 'reedes/vim-textobj-sentence'
-NeoBundle 'reedes/vim-textobj-quote'
-NeoBundle 'reedes/vim-wordy'
-NeoBundle 'reedes/vim-pencil'
-NeoBundle 'reedes/vim-lexical'
-NeoBundle 'plasticboy/vim-markdown'
+Plugin 'reedes/vim-litecorrect'
+Plugin 'reedes/vim-textobj-sentence'
+Plugin 'reedes/vim-textobj-quote'
+Plugin 'reedes/vim-wordy'
+Plugin 'reedes/vim-pencil'
+Plugin 'reedes/vim-lexical'
+Plugin 'plasticboy/vim-markdown'
 
 " }}}

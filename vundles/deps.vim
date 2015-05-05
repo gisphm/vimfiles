@@ -20,36 +20,16 @@
 
 " Deps {{{
 
-NeoBundle 'Shougo/vimproc.vim', {
-            \ 'build' : {
-            \    'linux' : 'make',
-            \ },
-            \ }
-NeoBundle 'Shougo/neomru.vim'
-NeoBundle 'Shougo/unite.vim', {
-            \ 'commands' : [{
-            \    'name' : 'Unite',
-            \    'complete' : 'customlist, unite#complete_source'
-            \ }],
-            \ }
-NeoBundle 'Shougo/vimfiler.vim', {
-            \ 'commands' : [
-            \    {
-            \      'name' : ['VimFiler', 'Edit', 'Write'],
-            \      'complete' : 'customlist, vimfiler#complete'
-            \    },
-            \    'Read',
-            \    'Source'
-            \ ],
-            \ 'mappings' : '<Plug>',
-            \ 'explorer' : 1,
-            \ }
-NeoBundle 'Shougo/unite-outline'
-NeoBundle 'Shougo/context_filetype.vim'
-NeoBundle 'MarcWeber/vim-addon-mw-utils'
-NeoBundle 'tomtom/tlib_vim'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'Shougo/neomru.vim'
+Plugin 'Shougo/unite.vim'
+Plugin 'Shougo/vimfiler.vim'
+Plugin 'Shougo/unite-outline'
+Plugin 'Shougo/context_filetype.vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
 if executable('ag')
-    NeoBundle 'rking/ag.vim'
+    Plugin 'rking/ag.vim'
 endif
 
 " }}}

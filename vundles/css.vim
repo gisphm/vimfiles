@@ -20,10 +20,10 @@
 
 " CSS {{{
 
-NeoBundle 'groenewege/vim-less'
-NeoBundle 'JulesWang/css.vim'
-NeoBundle 'cakebaker/scss-syntax.vim'
-NeoBundle 'ap/vim-css-color'
-NeoBundle 'hail2u/vim-css3-syntax'
+Plugin 'groenewege/vim-less'
+Plugin 'JulesWang/css.vim'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'ap/vim-css-color'
+Plugin 'hail2u/vim-css3-syntax'
 
 " }}}

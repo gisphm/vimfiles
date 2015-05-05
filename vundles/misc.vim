@@ -20,13 +20,13 @@
 
 " Misc {{{
 
-NeoBundle 'rodjek/vim-puppet'
-NeoBundle 'elzr/vim-json'
-NeoBundle 'othree/xml.vim'
-NeoBundle 'dbext.vim'
-NeoBundle 'bootleq/LargeFile'
-NeoBundle 's3rvac/AutoFenc'
-NeoBundle 'antoyo/vim-licenses'
-NeoBundle 'chrisbra/csv.vim'
+Plugin 'rodjek/vim-puppet'
+Plugin 'elzr/vim-json'
+Plugin 'othree/xml.vim'
+Plugin 'dbext.vim'
+Plugin 'bootleq/LargeFile'
+Plugin 's3rvac/AutoFenc'
+Plugin 'antoyo/vim-licenses'
+Plugin 'chrisbra/csv.vim'
 
 " }}}

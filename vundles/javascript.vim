@@ -20,13 +20,13 @@
 
 " Javascript {{{
 
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'briancollins/vim-jst'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'marijnh/tern_for_vim'
-NeoBundle 'Shutnik/jshint2.vim'
-NeoBundle 'othree/yajs.vim'
-NeoBundle 'othree/javascript-libraries-syntax.vim'
-NeoBundle 'othree/jspc.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'briancollins/vim-jst'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'marijnh/tern_for_vim'
+Plugin 'Shutnik/jshint2.vim'
+Plugin 'othree/yajs.vim'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'othree/jspc.vim'
 
 " }}}

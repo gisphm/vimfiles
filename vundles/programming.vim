@@ -20,19 +20,19 @@
 
 " Programming {{{
 
-NeoBundle 'tpope/vim-git'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'tpope/vim-dispatch'
-NeoBundle 'idanarye/vim-merginal'
-NeoBundle 'int3/vim-extradite'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'mhinz/vim-signify'
-NeoBundle 'mattn/webapi-vim'
-NeoBundle 'mattn/gist-vim'
-NeoBundle 'tomtom/tcomment_vim'
+Plugin 'tpope/vim-git'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-dispatch'
+Plugin 'idanarye/vim-merginal'
+Plugin 'int3/vim-extradite'
+Plugin 'scrooloose/syntastic'
+Plugin 'mhinz/vim-signify'
+Plugin 'mattn/webapi-vim'
+Plugin 'mattn/gist-vim'
+Plugin 'tomtom/tcomment_vim'
 if executable('ctags')
-    NeoBundle 'majutsushi/tagbar'
+    Plugin 'majutsushi/tagbar'
 endif
-NeoBundle 'Chiel92/vim-autoformat'
+Plugin 'Chiel92/vim-autoformat'
 
 " }}}
