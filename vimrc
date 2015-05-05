@@ -18,22 +18,17 @@
 "
 " }}}
 
-" NeoBundle {{{
+" Vundle {{{
 
-if !1 | finish | endif
+set nocompatible
+filetype off
 
-if has('vim_starting')
-    if &compatible
-        set nocompatible
-    endif
-    set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-call neobundle#begin(expand("~/.vim/bundle/"))
+Plugin 'gmarik/Vundle.vim'
 
-NeoBundleFetch "Shougo/neobundle.vim"
-
-let vimbundles = '~/.vim/neobundles/'
+let vimbundles = '~/.vim/vundles/'
 for eachbundle in split(globpath(vimbundles, '*.vim'), '\n')
     exe 'source' eachbundle
 endfor
@@ -41,8 +36,6 @@ endfor
 call neobundle#end()
 
 filetype plugin indent on
-
-NeoBundleCheck
 
 " }}}
 
