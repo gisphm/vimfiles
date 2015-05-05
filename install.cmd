@@ -14,21 +14,21 @@ REM WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 REM See the License for the specific language governing permissions and
 REM limitations under the License.
 
-if not exist "%HOME%\vimfiles\bundle" (
-	CALL mkdir "%HOME%\vimfiles\bundle"
+if not exist "%HOME%\.vim\bundle" (
+	CALL mkdir "%HOME%\.vim\bundle"
 )
-IF NOT EXIST "%HOME%\vimfiles\tmp" (
-	CALL MKDIR "%HOME%\vimfiles\tmp\sessions
-	CALL MKDIR "%HOME%\vimfiles\tmp\lock
-	CALL MKDIR "%HOME%\vimfiles\tmp\backup
-	CALL MKDIR "%HOME%\vimfiles\tmp\swap
-	CALL MKDIR "%HOME%\vimfiles\tmp\undo
-	CALL MKDIR "%HOME%\vimfiles\tmp\view
+IF NOT EXIST "%HOME%\.vim\tmp" (
+	CALL MKDIR "%HOME%\.vim\tmp\sessions
+	CALL MKDIR "%HOME%\.vim\tmp\lock
+	CALL MKDIR "%HOME%\.vim\tmp\backup
+	CALL MKDIR "%HOME%\.vim\tmp\swap
+	CALL MKDIR "%HOME%\.vim\tmp\undo
+	CALL MKDIR "%HOME%\.vim\tmp\view
 )
-if not exist "%HOME%\vimfiles\bundle\Vundle.vim" (
-	CALL git clone https://github.com/gmarik/Vundle.vim.git %HOME%\vimfiles\bundle\Vundle.vim
+if not exist "%HOME%\.vim\bundle\Vundle.vim" (
+	CALL git clone https://github.com/gmarik/Vundle.vim.git %HOME%\.vim\bundle\Vundle.vim
 ) ELSE (
-	CALL CD "%HOME%\vimfiles\bundle\Vundle.vim"
+	CALL CD "%HOME%\.vim\bundle\Vundle.vim"
 	CALL git pull
 	CALL CD %HOME%
 )
