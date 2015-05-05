@@ -18,15 +18,6 @@
 "
 " }}}
 
-" NeoBundle {{{
-
-nnoremap <leader>nu :NeoBundleUpdate<CR>
-nnoremap <Leader>ni :NeoBundleInstall<CR>
-nnoremap <Leader>nc :NeoBundleClean<CR>
-nnoremap <Leader>nl :NeoBundleUpdatesLog<CR>
-
-" }}}
-
 " Unite.vim {{{
 
 call unite#custom#source('file,file/new,buffer,file_rec', 'matchers', 'matcher_fuzzy')

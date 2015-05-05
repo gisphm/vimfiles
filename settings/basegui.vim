@@ -33,7 +33,7 @@ if has('gui_running')
     set lines=50
 
     " Ubuntu Mono patched font
-    set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
+    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
 
     " gui using solarized colorscheme
     colo solarized

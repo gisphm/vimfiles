@@ -20,7 +20,6 @@
 
 " General {{{
 
-set shell=/bin/sh
 set background=dark
 filetype plugin on
 syntax on                   " Syntax highlighting
