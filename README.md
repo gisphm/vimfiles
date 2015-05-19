@@ -1,6 +1,6 @@
 ## 我在Windows上的vim配置
 
-fork自[myvimrc][2]，我自己根据[spf13-vim][1]“改进”的在linux上用的vim配置。
+fork自[myvimrc][2]（我自己根据[spf13-vim][1]“改进”的在linux上用的vim配置）。
 
 ## 配置文件列表
 文件列表不变，如下：
@@ -14,7 +14,7 @@ fork自[myvimrc][2]，我自己根据[spf13-vim][1]“改进”的在linux上用
 
 ## TODO
 1. ✓ 解决目前配置可用的问题
-2. 替换`ag.vim`为`ack.vim`
+2. ✓ 替换`ag.vim`为`ack.vim`
 2. 解决可能遇到的问题（长期）
 
 ## 几点说明
