@@ -58,9 +58,9 @@ noremap <silent> <Space>f :Autoformat<CR>
 
 let g:syntastic_error_symbol             = '✗'
 let g:syntastic_warning_symbol           = '⚠'
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list            = 1
-let g:syntastic_check_on_open            = 1
+let g:syntastic_always_populate_loc_list = 0
+let g:syntastic_auto_loc_list            = 0
+let g:syntastic_check_on_open            = 0
 let g:syntastic_check_on_wq              = 0
 
 " }}}
@@ -70,7 +70,7 @@ let g:syntastic_check_on_wq              = 0
 let g:signify_vcs_list               = ['git']
 let g:signify_cursorhold_insert      = 1
 let g:signify_cursorhold_normal      = 1
-let g:signify_update_on_bufenter     = 1
+let g:signify_update_on_bufenter     = 0
 let g:signify_update_on_focusgained  = 1
 let g:signify_sign_add               = '✚'
 let g:signify_sign_delete            = '✖'

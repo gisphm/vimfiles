@@ -20,7 +20,7 @@
 
 " General {{{
 
-if has('gui_running') && has('libcall')
+if has('gui_running') && has('gui_win32') && has('libcall')
     " Disable toolbar and scrollbars
     set guioptions-=T
     set guioptions-=r
@@ -31,7 +31,7 @@ if has('gui_running') && has('libcall')
 
     " fix menu error
     "source $VIMRUNTIME/delmenu.vim
-	"source $VIMRUNTIME/menu.vim
+    "source $VIMRUNTIME/menu.vim
 
     " 50 lines of text
     set lines=50
@@ -43,11 +43,43 @@ if has('gui_running') && has('libcall')
 
     if filereadable(expand('$VIM/gvimfullscreen.dll'))
         let g:MyFullScreen = $VIM.'/gvimfullscreen.dll'
-        function! ToggleFullScreen() abort
+        function! ToggleFullScreen()
             call libcallnr(g:MyFullScreen, "ToggleFullScreen", 0)
         endfunction
 
+
+        let g:VimAlpha = 245
+        function! SetAlpha(alpha)
+            let g:VimAlpha = g:VimAlpha + a:alpha
+            if g:VimAlpha < 180
+                let g:VimAlpha = 180
+            endif
+            if g:VimAlpha > 255
+                let g:VimAlpha = 255
+            endif
+            call libcall(g:MyFullScreen, 'SetAlpha', g:VimAlpha)
+        endfunction
+
+        let g:VimTopMost = 0
+        function! SwitchVimTopMostMode()
+            if g:VimTopMost == 0
+                let g:VimTopMost = 1
+            else
+                let g:VimTopMost = 0
+            endif
+            call libcall(g:MyFullScreen, 'EnableTopMost', g:VimTopMost)
+        endfunction
+
         map <F11> <Esc>:call ToggleFullScreen()<CR>
+
+        "切换Vim是否在最前面显示
+        nmap <s-r> <esc>:call SwitchVimTopMostMode()<cr>
+        "增加Vim窗体的不透明度
+        nmap <s-t> <esc>:call SetAlpha(5)<cr>
+        "增加Vim窗体的透明度
+        nmap <s-y> <esc>:call SetAlpha(-5)<cr>
+        " 默认设置透明
+        autocmd GUIEnter * call libcallnr(g:MyFullScreen, 'SetAlpha', g:VimAlpha)
     endif
 endif
 
