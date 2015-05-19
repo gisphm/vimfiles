@@ -20,12 +20,6 @@
 
 " Writing {{{
 
-Plugin 'reedes/vim-litecorrect'
-Plugin 'reedes/vim-textobj-sentence'
-Plugin 'reedes/vim-textobj-quote'
-Plugin 'reedes/vim-wordy'
-Plugin 'reedes/vim-pencil'
-Plugin 'reedes/vim-lexical'
 Plugin 'plasticboy/vim-markdown'
 
 " }}}

@@ -20,22 +20,23 @@
 
 " Writing {{{
 
-let g:pencil#wrapModeDefault = 'soft'
-augroup writingPlugins
+augroup MarkdownFiles
     autocmd!
-    autocmd Filetype markdown,mkd call pencil#init()
-                \ | call lexical#init()
-                \ | call litecorrect#init()
-                \ | call textobj#quote#init()
-                \ | call textobj#sentence#init()
-    autocmd FileType textile call pencil#init()
-                \ | call lexical#init()
-                \ | call litecorrect#init()
-                \ | call textobj#quote#init()
-                \ | call textobj#sentence#init()
-    autocmd FileType text call pencil#init({ 'wrap': 'hard' })
-                \ | call lexical#init({ 'spell': '0' })
-                \ | call textobj#quote#init({ 'educate': 0 })
+    autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 augroup END
+let g:vim_markdown_math = 1
+let g:vim_markdown_frontmatter = 1
+let g:markdown_fenced_languages = []
+let g:markdown_fenced_languages = [
+            \ 'css',
+            \ 'javascript',
+            \ 'js=javascript',
+            \ 'json=javascript',
+            \ 'html',
+            \ 'ruby',
+            \ 'sass',
+            \ 'xml',
+            \ 'vim',
+            \ ]
 
 " }}}

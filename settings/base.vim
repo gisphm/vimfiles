@@ -46,6 +46,9 @@ set shortmess+=filmnrxoOtT          " Abbrev. of messages (avoids 'hit enter')
 set viewoptions=folds,options,cursor,unix,slash " Better Unix / Windows compatibility
 set virtualedit=onemore             " Allow for cursor beyond last character
 set history=1000                    " Store a ton of history (default is 20)
+set ttimeoutlen=50
+set linebreak
+let &showbreak='↪ '
 set spell                           " Spell checking on
 set hidden                          " Allow buffer switching without saving
 set iskeyword-=.                    " '.' is an end of word designator
@@ -83,12 +86,13 @@ autocmd BufWinLeave * call clearmatches()
 
 " Vim UI {{{
 
-set tabpagemax=15               " Only show 15 tabs
 set showmode                    " Display the current mode
 
 au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
 set cursorline cursorcolumn
+
+set colorcolumn=80
 
 highlight clear SignColumn      " SignColumn should match background
 highlight clear LineNr          " Current line number row will have same background color in relative mode
@@ -130,6 +134,9 @@ set scrolloff=3                 " Minimum lines to keep above and below cursor
 set foldenable                  " Auto fold code
 set list
 set listchars=tab:»\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
+set noerrorbells
+set novisualbell
+set t_vb=
 
 " }}}
 
