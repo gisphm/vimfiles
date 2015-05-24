@@ -47,8 +47,6 @@ set viewoptions=folds,options,cursor,unix,slash " Better Unix / Windows compatib
 set virtualedit=onemore             " Allow for cursor beyond last character
 set history=1000                    " Store a ton of history (default is 20)
 set ttimeoutlen=50
-set linebreak
-let &showbreak='↪ '
 set spell                           " Spell checking on
 set hidden                          " Allow buffer switching without saving
 set iskeyword-=.                    " '.' is an end of word designator
@@ -133,7 +131,7 @@ set scrolljump=5                " Lines to scroll when cursor leaves screen
 set scrolloff=3                 " Minimum lines to keep above and below cursor
 set foldenable                  " Auto fold code
 set list
-set listchars=tab:»\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
+set listchars=tab:>\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
 set noerrorbells
 set novisualbell
 set t_vb=

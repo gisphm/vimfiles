@@ -23,6 +23,7 @@
 set nocompatible
 filetype off
 
+set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
