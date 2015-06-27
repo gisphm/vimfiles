@@ -38,6 +38,5 @@ let g:markdown_fenced_languages = [
             \ 'xml',
             \ 'vim',
             \ ]
-let g:instant_markdown_slow = 1
 
 " }}}
