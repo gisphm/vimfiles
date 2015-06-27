@@ -45,6 +45,7 @@ set autowrite                       " Automatically write a file when leaving a 
 set shortmess+=filmnrxoOtT          " Abbrev. of messages (avoids 'hit enter')
 set viewoptions=folds,options,cursor,unix,slash " Better Unix / Windows compatibility
 set virtualedit=onemore             " Allow for cursor beyond last character
+set noshelltemp
 set history=1000                    " Store a ton of history (default is 20)
 set ttimeoutlen=50
 set spell                           " Spell checking on
@@ -54,6 +55,11 @@ set iskeyword-=#                    " '#' is an end of word designator
 set iskeyword-=-                    " '-' is an end of word designator
 
 au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
+
+augroup git-wip
+    autocmd!
+    autocmd BufWritePost * :silent !git wip save "WIP from vim" --editor -- "%"
+augroup END
 
 augroup resCur
     autocmd!
@@ -71,10 +77,10 @@ let g:skipview_files = [
             \ '\[example pattern\]'
             \ ]
 
-set dir=~/.vim/tmp/swap/
-set backupdir=~/.vim/tmp/backup/
-set undodir=~/.vim/tmp/undo/
-set viewdir=~/.vim/tmp/view/
+set dir=$HOME/vimfiles/tmp/swap/,$TMP,$TEMP
+set backupdir=$HOME/vimfiles/tmp/backup/
+set undodir=$HOME/vimfiles/tmp/undo/
+set viewdir=$HOME/vimfiles/tmp/view/
 
 " Resolve performance problems
 " clear match command gracefully
@@ -107,7 +113,7 @@ if has('statusline')
     " Broken down into easily includeable segments
     set statusline=%<%f\                     " Filename
     set statusline+=%w%h%m%r                 " Options
-    if filereadable(expand('~/.vim/bundle/vim-fugitive/README.markdown'))
+    if filereadable(expand('$HOME/vimfiles/bundle/vim-fugitive/README.markdown'))
         set statusline+=%{fugitive#statusline()} " Git Hotness
     endif
     set statusline+=\ [%{&ff}/%Y]            " Filetype
@@ -131,7 +137,7 @@ set scrolljump=5                " Lines to scroll when cursor leaves screen
 set scrolloff=3                 " Minimum lines to keep above and below cursor
 set foldenable                  " Auto fold code
 set list
-set listchars=tab:>\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
+set listchars=tab:>-,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
 set noerrorbells
 set novisualbell
 set t_vb=

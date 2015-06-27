@@ -144,7 +144,7 @@ imap <expr> <Tab> CleverTab()
 " Snippets {{{
 
 " Use honza's snippets.
-let g:neosnippet#snippets_directory = '~/.vim/bundle/vim-snippets/snippets'
+let g:neosnippet#snippets_directory = '$HOME/vimfiles/bundle/vim-snippets/snippets'
 
 " Enable neosnippet snipmate compatibility mode
 let g:neosnippet#enable_snipmate_compatibility = 1

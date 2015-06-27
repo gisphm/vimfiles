@@ -23,13 +23,13 @@
 set nocompatible
 filetype off
 
-set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+set runtimepath=$HOME/vimfiles,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/vimfiles/after
+set rtp+=~/vimfiles/bundle/Vundle.vim
+call vundle#begin('~/vimfiles/bundle/')
 
 Plugin 'gmarik/Vundle.vim'
 
-let vimbundles = '~/.vim/vundles/'
+let vimbundles = '~/vimfiles/vundles/'
 for eachbundle in split(globpath(vimbundles, '*.vim'), '\n')
     exe 'source' eachbundle
 endfor
@@ -42,7 +42,7 @@ filetype plugin indent on
 
 " Configurations {{{
 
-let bundlesettings = '~/.vim/settings/'
+let bundlesettings = '~/vimfiles/settings/'
 for eachsetting in split(globpath(bundlesettings, '*.vim'), '\n')
     exe 'source' eachsetting
 endfor

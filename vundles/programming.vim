@@ -22,6 +22,7 @@
 
 Plugin 'tpope/vim-git'
 Plugin 'tpope/vim-fugitive'
+Plugin 'gisphm/vim-gitignore'
 Plugin 'tpope/vim-dispatch'
 Plugin 'idanarye/vim-merginal'
 Plugin 'int3/vim-extradite'
