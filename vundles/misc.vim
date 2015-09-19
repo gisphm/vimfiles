@@ -23,7 +23,6 @@
 Plugin 'rodjek/vim-puppet'
 Plugin 'elzr/vim-json'
 Plugin 'othree/xml.vim'
-Plugin 'dbext.vim'
 Plugin 'bootleq/LargeFile'
 Plugin 's3rvac/AutoFenc'
 Plugin 'antoyo/vim-licenses'
