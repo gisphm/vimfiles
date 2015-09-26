@@ -2,6 +2,7 @@
 Develop / 2015-09-26
 ====================
 
+  * update README
   * update History.md
   * update README.md
   * added History.md and remove dbext.vim
