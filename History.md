@@ -1,7 +1,9 @@
 
-Develop / 2015-09-19
+Develop / 2015-09-26
 ====================
 
+  * update History.md
+  * update README.md
   * added History.md and remove dbext.vim
   * remove markdown preview
   * rename .vim to vimfiles
