@@ -18,12 +18,35 @@
 "
 " }}}
 
-" CSS {{{
+" Programming {{{
 
-Plugin 'groenewege/vim-less'
-Plugin 'JulesWang/css.vim'
-Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'ap/vim-css-color'
-Plugin 'hail2u/vim-css3-syntax'
+Plug 'tpope/vim-fugitive'
+Plug 'gisphm/vim-gitignore'
+Plug 'tpope/vim-dispatch'
+Plug 'idanarye/vim-merginal'
+Plug 'int3/vim-extradite'
+Plug 'scrooloose/syntastic'
+Plug 'mhinz/vim-signify'
+Plug 'mattn/webapi-vim'
+Plug 'mattn/gist-vim'
+Plug 'tomtom/tcomment_vim'
+if executable('ctags')
+    Plug 'majutsushi/tagbar'
+endif
+Plug 'Chiel92/vim-autoformat'
+
+" }}}
+
+" Misc {{{
+
+Plug 'bootleq/LargeFile'
+" Plug 's3rvac/AutoFenc'
+Plug 'antoyo/vim-licenses'
+
+" }}}
+
+" Writing {{{
+
+Plug 'hotoo/pangu.vim'
 
 " }}}

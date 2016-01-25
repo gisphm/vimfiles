@@ -18,22 +18,23 @@
 "
 " }}}
 
-" Programming {{{
+" HTML {{{
 
-Plugin 'tpope/vim-git'
-Plugin 'tpope/vim-fugitive'
-Plugin 'gisphm/vim-gitignore'
-Plugin 'tpope/vim-dispatch'
-Plugin 'idanarye/vim-merginal'
-Plugin 'int3/vim-extradite'
-Plugin 'scrooloose/syntastic'
-Plugin 'mhinz/vim-signify'
-Plugin 'mattn/webapi-vim'
-Plugin 'mattn/gist-vim'
-Plugin 'tomtom/tcomment_vim'
-if executable('ctags')
-    Plugin 'majutsushi/tagbar'
-endif
-Plugin 'Chiel92/vim-autoformat'
+Plug 'amirh/HTML-AutoCloseTag'
+Plug 'mattn/emmet-vim'
+
+" }}}
+
+" Javascript {{{
+
+Plug 'marijnh/tern_for_vim'
+Plug 'Shutnik/jshint2.vim'
+
+" }}}
+
+" Python {{{
+
+Plug 'davidhalter/jedi-vim', { 'for' : ['python'] }
+Plug 'wilywampa/python-mode', { 'branch' : 'develop', 'for' : ['python'] }
 
 " }}}

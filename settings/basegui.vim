@@ -36,7 +36,7 @@ if has('gui_running') && has('gui_win32') && has('libcall')
     " 50 lines of text
     set lines=50
 
-    set guifont=DejaVu_Sans_Mono_for_powerline:h10
+    set guifont=DejaVu_Sans_Mono_for_powerline:h11
 
     " gui using solarized colorscheme
     colo solarized

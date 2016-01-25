@@ -21,7 +21,9 @@
 " General {{{
 
 set background=dark
+filetype on
 filetype plugin on
+filetype plugin indent on
 syntax on                   " Syntax highlighting
 set mouse=a                 " Automatically enable mouse usage
 set mousehide               " Hide the mouse cursor while typing

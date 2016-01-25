@@ -18,25 +18,19 @@
 "
 " }}}
 
-" Vundle {{{
+" Plug Initialization {{{
 
 set nocompatible
-filetype off
 
 set runtimepath=$HOME/vimfiles,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/vimfiles/after
-set rtp+=~/vimfiles/bundle/Vundle.vim
-call vundle#begin('~/vimfiles/bundle/')
+call plug#begin('~/vimfiles/plugged')
 
-Plugin 'gmarik/Vundle.vim'
-
-let vimbundles = '~/vimfiles/vundles/'
+let vimbundles = '~/vimfiles/plugs/'
 for eachbundle in split(globpath(vimbundles, '*.vim'), '\n')
     exe 'source' eachbundle
 endfor
 
-call vundle#end()
-
-filetype plugin indent on
+call plug#end()
 
 " }}}
 
